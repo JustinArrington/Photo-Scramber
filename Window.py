@@ -9,7 +9,7 @@ from kivy.core.image import Image as CoreImage
 class ScatterTextWidget(BoxLayout):
     def __init__(self, **kwargs):
         super(ScatterTextWidget, self).__init__(**kwargs)
-        self.image = PhotoShuffle('image.png')
+        self.image = PhotoShuffle('landscape800x531.png')
         self.shuffleEvent = None
         self.sortEvent = None
 
