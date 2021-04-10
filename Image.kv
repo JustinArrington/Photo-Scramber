@@ -1,0 +1,30 @@
+<ScatterTextWidget>:
+    orientation: 'vertical'
+    Label:
+        id: topUI
+        text: "Photo Scrambler"
+        font_size: 50
+        size_hint_y: .1
+
+    Image:
+        id: image
+    BoxLayout:
+        size_hint_y: .1
+        Button:
+            id: button_showImage
+            text: "Show Image"
+
+            font_size: 40
+            on_release: root.firstClicked()
+        Button:
+            id: button_shuffle
+            text: "shuffle"
+            on_release: root.startShuffle()
+        Button:
+            id: button_sort
+            text: "Start Sort"
+            on_release: root.startSort()
+        Button:
+            id: button_stopAll
+            text: "Stop"
+            on_release: root.stopAll()
